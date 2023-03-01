@@ -1,0 +1,29 @@
+
+public class vendorListing {
+    private Vendor vendor = new Vendor();
+    private Instrument instrument = new Instrument();
+    public vendorListing(Instrument newInstrument, Vendor newVendor){
+        this.instrument = newInstrument;
+        this.vendor = newVendor;
+    }
+
+    public void setVendor(Vendor newVendor){
+        this.vendor = newVendor;
+    }
+    
+ public String getVendor(){
+        return vendor.getVendorName();
+        //or toString
+        //return vendor.toString();
+    }
+
+    public void setInstrument(Instrument newInstrument){
+        this.instrument = newInstrument;
+    }
+    
+    public String getInstrument(){
+        return instrument.toString();
+    }
+
+
+}
